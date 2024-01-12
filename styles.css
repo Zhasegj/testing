@@ -137,7 +137,7 @@ text-align: center;
 
     .image-container1 {
         height: 437px;
-        background-attachment: local;
+        background-attachment: scroll;
     }
 
     .divider {

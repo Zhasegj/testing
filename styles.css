@@ -26,9 +26,10 @@
         /*---------------- FIRST SECTION -------------------*/
         .container1 {
             width: 100%;
-            height: 500px;
+            height: 850px;
             background-image: url('images/OsorioTours.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
             background-attachment: fixed;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: top;
             position: relative;
@@ -48,4 +49,57 @@
             width: 30%;
             height: 1px;
             background-color: #757575; /* Color de la línea (negro en este caso) */
+        }
+
+        .container2 {
+            margin: 0 auto;
+            width: 80%;
+            min-height: auto;
+            display: flex; /* Establece el contenedor como flexible */
+            justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+            align-items: center; /* Centra los elementos verticalmente en el contenedor */
+            background-color: #fffefe;
+            border: 1px solid #c51010;
+        }
+
+        .container3 {
+            width: 100%;
+            min-height: auto;
+            display: flex; /* Establece el contenedor como flexible */
+            flex-direction: column; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+            align-items: center; /* Centra los elementos verticalmente en el contenedor */
+            background-color: #fffefe;
+            border: 1px solid #c51010;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            height: 437px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/cenote1.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 20px;
+            border-radius: 20px;
+        }
+
+        .text-containerblack{
+            font-family:'Roboto', sans-serif;
+            text-align: center;
+            color: #292929;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container1 {
+                background-size: contain;
+                height: 300px;
+            }
+            .container2 {
+                flex-direction: column; /* Cambia la dirección a vertical */
+                align-items: center; /* Centra los elementos verticalmente */
+            }
         }

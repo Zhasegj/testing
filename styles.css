@@ -118,8 +118,8 @@
 
         @media only screen and (max-width: 768px) {
             .container1 {
-                background-size: contain;
-                height: 150px;
+                background-size: cover;
+                height: 200px;
             }
             .container2 {
                 flex-direction: column; /* Cambia la dirección a vertical */

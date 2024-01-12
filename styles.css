@@ -59,7 +59,7 @@ body {
 
 .container201 {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     min-height: auto;
     display: flex; /* Establece el contenedor como flexible */
     justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
@@ -104,8 +104,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 20px;
-    border-radius: 20px;
 }
 
 .text-containerblack{
@@ -152,7 +150,7 @@ text-align: center;
         align-items: center; /* Centra los elementos verticalmente */
     }
 
-    .container2201 {
+    .container201 {
         flex-direction: column; /* Cambia la dirección a vertical */
         align-items: center; /* Centra los elementos verticalmente */
     }

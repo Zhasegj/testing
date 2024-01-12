@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours yucatan</title>
+
+    <!--Enlaces de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin-right: 3px;
+            margin-left: 0px;
+            margin-top: 0px;
+            position: absolute;
+        }
+
+        :root { /*VARIABLES*/
+            --heihgt-image: 65vh;
+            --width-imge: 100%;
+        }
+
+        /*---------------- MAIN CONTAINER -------------------*/
+        .maincontainer {
+            position:relative;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto; 
+            background-color: #fffefe;
+            border: 1px solid #ccc;
+            font-family:'Roboto', sans-serif;
+            align-items: center center;
+        }
+        /*---------------- FIRST SECTION -------------------*/
+        .container1 {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url('images/OsorioTours.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-attachment: fixed;
+            background-size: cover; /*change to cover*/
+            background-repeat: no-repeat;
+            background-position: center center; 
+            border: 1px solid #272727;
+            position: relative;
+        }
+
+        /*---------------- divider -------------------*/
+        .divider {
+            margin: 0 auto;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+            width: 30%;
+            height: 1px;
+            background-color: #757575; /* Color de la línea (negro en este caso) */
+        }
+
+        /*---------------- SECOND SECTION -------------------*/
+                /*---------------- SECOND SECTION -------------------*/
+
+        .container2 {
+            margin: 0 auto;
+            width: 80%;
+            min-height: auto;
+            display: flex; /* Establece el contenedor como flexible */
+            justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+            align-items: center; /* Centra los elementos verticalmente en el contenedor */
+            background-color: #fffefe;
+            border: 1px solid #c51010;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container2 {
+                flex-direction: column; /* Cambia la dirección a vertical */
+                align-items: center; /* Centra los elementos verticalmente */
+            }
+
+            .container5 {
+                width: 100%;
+                max-width: none;
+            }
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            height: 437px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/cenote1.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 20px;
+            border-radius: 20px;
+        }
+
+        .container3 {
+            margin: 0 auto;
+            width: 100%;
+            min-height: auto;
+            display: flex; /* Establece el contenedor como flexible */
+            flex-direction: column; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+            align-items: center; /* Centra los elementos verticalmente en el contenedor */
+            background-color: #fffefe;
+            border: 1px solid #c51010;
+        }
+
+        /*---------------- THIRD SECTION -------------------*/
+                /*---------------- THIRD SECTION -------------------*/
+                        /*---------------- THIRD SECTION -------------------*/
+
+        .container4 {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url('images/cenote2.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-attachment: fixed;
+            background-size: cover; /*change to cover*/
+            background-repeat: no-repeat;
+            background-position: center center; 
+            border: 1px solid #272727;
+            position: relative;
+        }
+
+        .blackbackground {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #101218;
+            opacity: 0.7;
+            z-index: 0;
+        }
+
+        .container5 {
+            margin: 0 auto;
+            width: 80%;
+            min-height: auto;
+            display: flex; /* Establece el contenedor como flexible */
+            flex-direction: column; /* Distribuye los elementos en columna */
+            align-items: center; /* Centra los elementos verticalmente en el contenedor */
+            background-color: #fffefe00;
+            border: 1px solid #c51010;
+        }
+
+        .container6,
+        .container7,
+        .container8,
+        .container9 {       /*CONTENEDOR DE 3 IMAGENES*/
+            margin: 0 auto;
+            width: 100%;
+            min-height: auto;
+            margin-top: 5px;
+            display: flex; /* Establece el contenedor como flexible */
+            justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+            align-items: center center; /* Centra los elementos verticalmente en el contenedor */
+            background-color: #fffefe00;
+            border: 1px solid #25c510;
+        }
+
+        .containerimagebutton {
+            margin: 0 auto;
+            width: 33.33%;
+            min-height: auto;
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex; /* Establece el contenedor como flexible */
+            flex-direction: column; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+            align-items: center; /* Centra los elementos verticalmente en el contenedor */
+            background-color: #fffefe00;
+            border: 1px solid #b1b107;
+        }
+
+        .image-container1 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/bacalar.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container2 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);            
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/celestun.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container3 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/chichen.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container4 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/coloradas.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container5 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/costa\ norte.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container6 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/isla\ mujeres.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container7 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/mayapan.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container8 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/santa\ barbara.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container9 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/sisal.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container10 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/Tulum.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container11 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/uxmal.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .image-container12 {
+            position: relative;
+            width: var(--width-imge);
+            height: var(--heihgt-image);
+            margin-right: 5px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url(''); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        @media only screen and (max-width: 1368px) {
+            .container6,
+            .container7,
+            .container8,
+            .container9 {
+                flex-direction: column; /* Cambia la dirección a vertical */
+                align-items: center; /* Centra los elementos verticalmente */
+            }
+
+            .containerimagebutton {
+                width: 100%
+            }
+
+            .image-container1,
+            .image-container2,
+            .image-container3, 
+            .image-container4, 
+            .image-container5, 
+            .image-container6,
+            .image-container7,
+            .image-container8,
+            .image-container9,
+            .image-container10,
+            .image-container11 {
+                width: 100%;
+                height: 75vh;
+                margin-top: 5px;
+                background-size: contain;
+            }
+
+            .image-container12 {
+                width: 0%;
+                height: 0%;
+                background-size: 0%;
+            }
+
+        }
+
+        .button-container {
+            margin-top: 5px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+            z-index: 2;
+        }
+
+        /*---------------- FOURTH SECTION -------------------*/
+            /*---------------- FOURTH SECTION -------------------*/
+                /*---------------- FOURTH SECTION -------------------*/
+                    /*---------------- FOURTH SECTION -------------------*/
+        
+        .containers2 {
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 25px;
+            padding-bottom: 25px; 
+            background-color: #fffefe;
+            /*border: 1px solid #0b0b0b;*/
+            font-family:'Roboto', sans-serif;
+        }
+
+        .second-container {
+            margin: 0 auto;
+            width: 100%;
+            min-height: auto;
+            margin-top: 5px;
+            display: flex; /* Establece el contenedor como flexible */
+            justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+            align-items: center center; /* Centra los elementos verticalmente en el contenedor */
+            background-color: #fffefe00;
+            border: 1px solid #25c510;
+        }
+
+        .image-containers21 {
+            position: relative;
+            width: 33.33%;
+            min-height: 462px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/sedan.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-containers22 {
+            position: relative;
+            width: 33.33%;
+            min-height: 462px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/nissan.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-containers23 {
+            position: relative;
+            width: 33.33%;
+            min-height: 462px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/urvan.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-containers24 {
+            position: relative;
+            width: 33.33%;
+            min-height: 462px;
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('images/WhatsApp\ Image\ 2024-01-05\ at\ 9.39.18\ PM.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @media only screen and (max-width: 1368px) {
+            .second-container{
+                flex-direction: column; /* Cambia la dirección a vertical */
+                align-items: center; /* Centra los elementos verticalmente */
+            }
+
+            .image-containers21,
+            .image-containers22,
+            .image-containers23,
+            .image-containers24 {
+            width: 100%; /* Cambia el ancho al 100% en pantallas más pequeñas */
+            }
+        }
+
+        .image-containerEMPTY {
+            position: relative;
+            width: 33.33%;
+            min-height: 462px;
+            display: flex;
+            flex-direction: column;
+            background-image: url('#'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @media only screen and (max-width: 1368px) {
+            .image-containerEMPTY {
+            width: 0%; /* Cambia el ancho al 100% en pantallas más pequeñas */
+            min-height: 0px;
+            }
+        }
+       
+        .image-containers21:hover,
+        .image-containers22:hover,
+        .image-containers23:hover,
+        .image-containers24:hover {
+            transform: scale(1.03); /* Aplica la transformación de escala al hacer hover */
+            z-index: 1;
+        }
+
+        .image-containers21::before,
+        .image-containers22::before,
+        .image-containers23::before,
+        .image-containers24::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #101218;
+            opacity: 0.74;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-containers21:hover::before,
+        .image-containers22:hover::before,
+        .image-containers23:hover::before,
+        .image-containers24:hover::before {
+            opacity: 0.54;
+        }
+
+        /* Style for the text container */
+        .text-containers2 {
+            text-align: left;
+            color: #F3F5F5;
+            padding-top: 10%;
+            padding-right: 5%;
+            padding-left: 5%;
+            z-index: 2;
+        }
+                    /*---------------- FOURTH SECTION -------------------*/
+
+        .custom-button {
+            display: inline-block;
+            padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+            background-color: #ffffff; /* Color de fondo blanco */
+            border-radius: 20px; /* Bordes redondeados de 20px */
+            text-decoration: none; /* Elimina la subrayado por defecto en los enlaces */
+            color: #000000; /* Color del texto en negro */
+            text-align: center;
+            font-size: 16px; /* Ajusta el tamaño del texto según tus necesidades */
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Agrega una transición suave al color de fondo y al texto */
+        }
+
+        .custom-button:hover {
+            background-color: #000000; /* Color de fondo negro al hacer hover */
+            color: #ffffff; /* Color del texto blanco al hacer hover */
+        }
+
+        .centered-text {
+        text-align: center;
+        }
+
+        .margintop {
+            margin: 0 auto;
+            margin-top: 9vh;
+        }
+
+        .text-containerblack{
+            font-family:'Roboto', sans-serif;
+            text-align: center;
+            color: #292929;
+        }
+
+        .text-containerwhite{
+            font-family:'Roboto', sans-serif;
+            text-align: center;
+            color: #f3f5f5;
+            z-index: 1;
+        }
+
+        .maincontainer h2 {
+            text-align: center;
+            font-size: 44px;
+            font-weight: 700;
+            transform: scaleY(0.85);
+            letter-spacing: -1.5px;
+        }
+
+        .maincontainer h3 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .centered-text {
+        text-align: center;
+        }
+
+        .maincontainer p {
+            font-weight: 300;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Your container goes here -->
+    <div class="maincontainer">     <!-- FIRST SECTION -->
+        <div class="container1">
+            <div class="margintop"></div>
+        </div>
+        <div class="divider"></div>
+        <div class="container2">        <!-- SECOND SECTION-->
+            <div class="image-container"></div>
+            <div class="container3">
+                <div class="text-containerblack">
+                    <h2>Agencia de turismo</h2>
+                    <p>Nos dedicamos apasionadamente a preservar la armonía de la naturaleza a través de un compromiso inquebrantable con el turismo responsable. Buscamos contribuir significativamente en tres dimesnioes clave: justo, social y, sobre todo, natural.</p>
+                    <p>Nuestro equipo está formado por guías altamente calificados, reconocidos por la Secretaría de Turismo, quienes no solo lideran, sino que tambiíen se sumergen completamente en la experiencia de nuestros visitantes, compartiendo con ellos la belleza y la importancia de nuestro entorno</p>
+                    <p>En cada paso, estamos comprometidos con un enfoque que celebra y conserva nuestro patrimonio natural para las generaciones venideras</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="container4">            <!-- THIRD SECTION -->
+            <div class="blackbackground"></div>
+            <div class="container5">
+                <div class="margintop"></div>
+                <div class="text-containerwhite">
+                    <h2>Servicios de tours</h2>
+                    <h3>Tours compartidos</h3>
+                </div>
+                <div class="container6">
+                    <div class="containerimagebutton">
+                        <div class="image-container1"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                    <div class="containerimagebutton">
+                        <div class="image-container2"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                    <div class="containerimagebutton">
+                        <div class="image-container3"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container7">
+                    <div class="containerimagebutton">
+                        <div class="image-container4"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                    <div class="containerimagebutton">
+                        <div class="image-container5"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                    <div class="containerimagebutton">
+                        <div class="image-container6"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container8">
+                    <div class="containerimagebutton">
+                        <div class="image-container7"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                    <div class="containerimagebutton">
+                        <div class="image-container8"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                    <div class="containerimagebutton">
+                        <div class="image-container9"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container9">
+                    <div class="containerimagebutton">
+                        <div class="image-container10"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                    <div class="containerimagebutton">
+                        <div class="image-container11"></div>
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                    <div class="containerimagebutton">
+                        <div class="image-container12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="containers2">                       <!-- FOURTH SECTION -->
+            <div class="container5">
+                <div class="text-containerblack">
+                    <h2>Renta de autos</h2>
+                    <h3>¡Tu solución de movilidad sin complicaciones!</h3>
+                </div>
+                <div class="container6">
+                    <div class="image-containers21">
+                        <!-- Text container for the first image -->
+                        <div class="text-containers2">
+                        <h3>Autos Sedan</h3> <!-- Titulo -->    
+                        <p>No disponible</p>               
+                        </div>
+                    </div>
+        
+                    <!-- Second Image container -->
+                    <div class="image-containers22">            
+                        <!-- Text container for the second image -->
+                        <div class="text-containers2">
+                            <h3>Camioneta 14 pasajeros</h3>
+                            <p>Con operador</p>
+                            <p>Internet itinerante (no móvil)</p>
+                            <p>Precio de temporada baja:</p>
+                            <p class="centered-text"><b>$2,500.00 MXN</b></p>
+                            <p>Precio de temporada alta:</p>
+                            <p class="centered-text"><b>$4,500.00 MXN</b></p>
+                        </div>
+                        <!-- Button container -->
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%2014%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+        
+                    <!-- Third Image container -->
+                    <div class="image-containers23">
+                        <!-- Text container for the third image -->
+                        <div class="text-containers2">
+                            <h3>Camioneta 20 pasajeros</h3>
+                            <p>Precio de temporada baja:</p>
+                            <p class="centered-text"><b>$5,500.00 MXN</b></p>
+                            <p>Precio de temporada alta:</p>
+                            <p class="centered-text"><b>$7,000.00 MXN</b></p>
+                        </div>
+                        <!-- Button container -->
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%2020%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-container">                    
+                    <div class="image-containerEMPTY"></div>        
+                    <!-- Second Image container -->
+                    <div class="image-containers24">            
+                        <!-- Text container for the second image -->
+                        <div class="text-containers2">
+                            <h3>Minivan 7 pasajeros</h3>
+                            <p>Precio de temporada baja:</p>
+                            <p class="centered-text"><b>$1,600.00 MXN</b></p>
+                            <p>Precio de temporada alta:</p>
+                            <p class="centered-text"><b>$1,800.00 MXN</b></p>
+                        </div>
+                        <!-- Button container -->
+                        <div class="button-container">
+                            <a href="https://wa.me/529991110028?text=Hola%21%2C%20me%20gustar%C3%ADa%20apartar%20una%20camioneta%20de%207%20pasajeros" class="custom-button">Apartar</a>
+                        </div>
+                    </div>
+        
+                    <!-- Third Image container -->
+                    <div class="image-containerEMPTY">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

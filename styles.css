@@ -95,7 +95,7 @@
 
         @media only screen and (max-width: 768px) {
             .container1 {
-                background-size: contain;
+                background-size: cover;
                 height: 300px;
             }
             .container2 {

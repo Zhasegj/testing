@@ -39,7 +39,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 100%;
-    height: 437px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-image: url('images/OsorioTours.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
@@ -129,10 +129,13 @@ text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
-    .container1,
     .container2 {
         flex-direction: column; /* Cambia la dirección a vertical */
         align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    .image-container1 {
+        height: 437px;
     }
 
     .divider {

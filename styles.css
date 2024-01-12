@@ -43,7 +43,6 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url('images/OsorioTours.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

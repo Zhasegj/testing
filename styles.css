@@ -129,7 +129,7 @@ text-align: center;
     font-weight: 300;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .container2 {
         flex-direction: column; /* Cambia la dirección a vertical */
         align-items: center; /* Centra los elementos verticalmente */

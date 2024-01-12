@@ -116,7 +116,7 @@
             font-weight: 300;
         }
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 767px) {
             .container1 {
                 background-size: contain;
                 height: 30vh;

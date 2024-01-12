@@ -30,7 +30,7 @@
             background-image: url('images/OsorioTours.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
             background-attachment: fixed;
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position: center;
             position: relative;
             /*background-attachment: fixed;
             background-size: cover; /*change to cover*/

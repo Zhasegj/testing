@@ -35,6 +35,50 @@ body {
     border: 1px solid #650ba5;
 }
 
+.container2 {
+    margin: 0 auto;
+    width: 80%;
+    min-height: auto;
+    display: flex; /* Establece el contenedor como flexible */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente en el contenedor */
+    background-color: #fffefe;
+    /*border: 1px solid #c51010;*/
+}
+
+.container3 {
+    width: 100%;
+    min-height: auto;
+    display: flex; /* Establece el contenedor como flexible */
+    flex-direction: column; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente en el contenedor */
+    background-color: #fffefe;
+    /*border: 1px solid #c51010;*/
+}
+
+.container4 {
+    margin: 0 auto;
+    width: 80%;
+    min-height: auto;
+    display: flex; /* Establece el contenedor como flexible */
+    flex-direction: column; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente en el contenedor */
+    background-color: #fffefe00;
+    /*border: 1px solid #c51010;*/
+}
+
+.blackbackground {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 115vh;
+    right: 0;
+    bottom: 0;
+    background-color: #101218;
+    opacity: 0.7;
+    z-index: 0;
+}
+
 .image-container1 {
     position: relative;
     width: 100%;
@@ -47,37 +91,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-/*---------------- divider -------------------*/
-.divider {
-    margin: 0 auto;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    width: 30%;
-    height: 1px;
-    background-color: #757575; /* Color de la línea (negro en este caso) */
-}
-
-.container2 {
-    margin: 0 auto;
-    width: 80%;
-    min-height: auto;
-    display: flex; /* Establece el contenedor como flexible */
-    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
-    align-items: center; /* Centra los elementos verticalmente en el contenedor */
-    background-color: #fffefe;
-    border: 1px solid #c51010;
-}
-
-.container3 {
-    width: 100%;
-    min-height: auto;
-    display: flex; /* Establece el contenedor como flexible */
-    flex-direction: column; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
-    align-items: center; /* Centra los elementos verticalmente en el contenedor */
-    background-color: #fffefe;
-    border: 1px solid #c51010;
 }
 
 .image-container2 {
@@ -95,6 +108,34 @@ body {
     border-radius: 20px;
 }
 
+.image-container3 {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/tofit.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.image-container4 {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/calendariomaya.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-attachment: scroll;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
 .text-containerblack{
     font-family:'Roboto', sans-serif;
     text-align: center;
@@ -103,9 +144,21 @@ body {
 
 .text-containerwhite{
     font-family:'Roboto', sans-serif;
-    text-align: center;
+    text-align: left;
     color: #f3f5f5;
     z-index: 1;
+    margin-left: 115vh;
+    margin-top: 3vh;
+}
+
+/*---------------- divider -------------------*/
+.divider {
+    margin: 0 auto;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    width: 30%;
+    height: 1px;
+    background-color: #757575; /* Color de la línea (negro en este caso) */
 }
 
 .maincontainer h2 {
@@ -125,8 +178,38 @@ body {
 text-align: center;
 }
 
+.justified-text {
+    text-align: justify;
+}
+
 .maincontainer p {
     font-weight: 300;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+    background-color: #ffffff; /* Color de fondo blanco */
+    border-radius: 20px; /* Bordes redondeados de 20px */
+    text-decoration: none; /* Elimina la subrayado por defecto en los enlaces */
+    color: #000000; /* Color del texto en negro */
+    text-align: center;
+    font-size: 16px; /* Ajusta el tamaño del texto según tus necesidades */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Agrega una transición suave al color de fondo y al texto */
+}
+
+.button-container {
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.custom-button:hover {
+    background-color: #000000; /* Color de fondo negro al hacer hover */
+    color: #ffffff; /* Color del texto blanco al hacer hover */
 }
 
 @media only screen and (max-width: 768px) {
@@ -135,8 +218,8 @@ text-align: center;
         align-items: center; /* Centra los elementos verticalmente */
     }
 
-    .image-container1 {
-        height: 437px;
+    .image-container1,
+    .image-container3 {
         background-attachment: scroll;
     }
 

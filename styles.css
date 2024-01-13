@@ -67,6 +67,28 @@ body {
     /*border: 1px solid #c51010;*/
 }
 
+.container41 {
+    margin: 0 auto;
+    width: 100%;
+    min-height: auto;
+    display: flex; /* Establece el contenedor como flexible */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente en el contenedor */
+    background-color: #fffefe;
+    border: 1px solid #650ba5;
+}
+
+.container42 {
+    margin: 0 auto;
+    width: 80%;
+    min-height: auto;
+    display: flex; /* Establece el contenedor como flexible */
+    flex-direction: column; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente en el contenedor */
+    background-color: #fffefe;
+    /*border: 1px solid #c51010;*/
+}
+
 .blackbackground {
     content: "";
     position: absolute;
@@ -79,7 +101,7 @@ body {
     z-index: 0;
 }
 
-.image-container1 {
+.image-container11 {
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -93,7 +115,7 @@ body {
     background-position: center;
 }
 
-.image-container2 {
+.image-container21 {
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -108,7 +130,7 @@ body {
     border-radius: 20px;
 }
 
-.image-container3 {
+.image-container31 {
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -122,7 +144,7 @@ body {
     background-position: center; 
 }
 
-.image-container4 {
+.image-container32 {
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -136,10 +158,114 @@ body {
     background-position: center; 
 }
 
+.image-containers41 {
+    position: relative;
+    width: 33.33%;
+    min-height: 462px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/sedan.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-containers42 {
+    position: relative;
+    width: 33.33%;
+    min-height: 462px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/nissan.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-containers43 {
+    position: relative;
+    width: 33.33%;
+    min-height: 462px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/urvan.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-containers44 {
+    position: relative;
+    width: 33.33%;
+    min-height: 462px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/WhatsApp\ Image\ 2024-01-05\ at\ 9.39.18\ PM.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-containers41:hover,
+.image-containers42:hover,
+.image-containers43:hover,
+.image-containers44:hover {
+    transform: scale(1.03); /* Aplica la transformación de escala al hacer hover */
+    z-index: 1;
+}
+
+.image-containers41::before,
+.image-containers42::before,
+.image-containers43::before,
+.image-containers44::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #101218;
+    opacity: 0.74;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-containers41:hover::before,
+.image-containers42:hover::before,
+.image-containers43:hover::before,
+.image-containers44:hover::before {
+    opacity: 0.54;
+}
+
+.image-containerEMPTY {
+    position: relative;
+    width: 33.33%;
+    min-height: 462px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('#'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.text-containers2 {
+    text-align: left;
+    color: #F3F5F5;
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    z-index: 2;
+}
+
 .text-containerblack{
     font-family:'Roboto', sans-serif;
     text-align: center;
     color: #292929;
+    padding: 60px;
 }
 
 .text-containerwhite{
@@ -149,6 +275,20 @@ body {
     z-index: 1;
     margin-left: 115vh;
     margin-top: 3vh;
+}
+
+.text-containerwhitenormal{
+    font-family:'Roboto', sans-serif;
+    text-align: left;
+    color: #f3f5f5;
+    z-index: 1;
+}
+
+.text-containerblacknormal{
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    color: #292929;
+    padding: 60px;
 }
 
 /*---------------- divider -------------------*/
@@ -163,7 +303,6 @@ body {
 
 .maincontainer h2 {
     text-align: center;
-    font-size: 44px;
     font-weight: 700;
     transform: scaleY(0.85);
     letter-spacing: -1.5px;
@@ -173,11 +312,19 @@ body {
 
 .maincontainer h3 {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .centered-text {
 text-align: center;
+}
+
+.font-size-text {
+    font-size: 44px;
+}
+
+.font-size-text41 {
+    font-size: 28px;
 }
 
 .justified-text {
@@ -215,7 +362,8 @@ text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-    .container2 {
+    .container2,
+    .container41 {
         flex-direction: column; /* Cambia la dirección a vertical */
         align-items: center; /* Centra los elementos verticalmente */
     }
@@ -230,6 +378,10 @@ text-align: center;
         margin-top: 3vh;
     }
 
+    .text-containerblack {
+        padding: 0;
+    }
+
     .blackbackground {
         left: 0;
     }
@@ -238,6 +390,22 @@ text-align: center;
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
+    .image-containers41,
+    .image-containers42,
+    .image-containers43 {
+    width: 100%; /* Cambia el ancho al 100% en pantallas más pequeñas */
+    }
+
+    .image-containers44 {
+        width: 100%; /* Cambia el ancho al 100% en pantallas más pequeñas */
+        margin-top: 10px;
+    }
+
+    .image-containerEMPTY {
+        width: 0%; /* Cambia el ancho al 100% en pantallas más pequeñas */
+        min-height: 0px;
+        }
 }
 
 

@@ -223,6 +223,15 @@ text-align: center;
         background-attachment: scroll;
     }
 
+    .text-containerwhite {
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+
+    .blackbackground {
+        left: 0;
+    }
+
     .divider {
         margin-top: 40px;
         margin-bottom: 40px;

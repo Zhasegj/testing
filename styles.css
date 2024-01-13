@@ -368,8 +368,8 @@ text-align: center;
         align-items: center; /* Centra los elementos verticalmente */
     }
 
-    .image-container1,
-    .image-container3 {
+    .image-container11,
+    .image-container31 {
         background-attachment: scroll;
     }
 

@@ -271,7 +271,7 @@ body {
     height: 750px;
     display: flex;
     flex-direction: column;
-    background-image: url('images/chichenlogoPAGE.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-image: url('images/chichenlogoPAGE.jpeg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

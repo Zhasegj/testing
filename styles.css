@@ -89,6 +89,25 @@ body {
     /*border: 1px solid #c51010;*/
 }
 
+.container61 {
+    position: relative;
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container62 {
+    margin: 0 auto;
+    width: 80%;
+    min-height: auto;
+    display: flex; /* Establece el contenedor como flexible */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente en el contenedor */
+    background-color: #fffefe00;
+    /*border: 1px solid #c51010;*/
+}
+
 .blackbackground {
     content: "";
     position: absolute;
@@ -106,8 +125,18 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: 111vh;
     bottom: 0;
+    background-color: #101218;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.blackbackground3 {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-color: #101218;
     opacity: 0.7;
     z-index: 0;
@@ -271,7 +300,35 @@ body {
     height: 750px;
     display: flex;
     flex-direction: column;
-    background-image: url('images/chichenlogoPAGE.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-image: url('images/chichenlogoPAGE.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-container52 {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/chichentext.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-attachment: scroll;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.image-container61 {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/bird-yucatan.jpg'); /* Cambia 'background.jpg' con la ruta de tu imagen */
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -308,7 +365,7 @@ body {
     text-align: left;
     color: #f3f5f5;
     z-index: 1;
-    margin-right: 87vh;
+    margin-right: 107vh;
     margin-top: 9vh;
 }
 
@@ -383,6 +440,19 @@ text-align: center;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Agrega una transición suave al color de fondo y al texto */
 }
 
+.custom-button-green {
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+    background-color: #12bc00; /* Color de fondo blanco */
+    border-radius: 20px; /* Bordes redondeados de 20px */
+    text-decoration: none; /* Elimina la subrayado por defecto en los enlaces */
+    color: #ffffff; /* Color del texto en negro */
+    text-align: center;
+    font-size: 16px; /* Ajusta el tamaño del texto según tus necesidades */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Agrega una transición suave al color de fondo y al texto */
+}
+
 .button-container {
     margin-top: 5px;
     padding: 5px;
@@ -396,6 +466,11 @@ text-align: center;
     color: #ffffff; /* Color del texto blanco al hacer hover */
 }
 
+.custom-button-green:hover {
+    background-color: #ffffff; /* Color de fondo negro al hacer hover */
+    color: #12bc00; /* Color del texto blanco al hacer hover */
+}
+
 @media only screen and (max-width: 768px) {
     .container2,
     .container41 {
@@ -405,7 +480,8 @@ text-align: center;
 
     .image-container11,
     .image-container31,
-    .image-container51 {
+    .image-container51,
+    .image-container61 {
         background-attachment: scroll;
     }
 
@@ -420,7 +496,8 @@ text-align: center;
         padding: 0;
     }
 
-    .blackbackground {
+    .blackbackground,
+    .blackbackground3 {
         left: 0;
     }
 
@@ -443,6 +520,10 @@ text-align: center;
     .image-containerEMPTY {
         width: 0%; /* Cambia el ancho al 100% en pantallas más pequeñas */
         min-height: 0px;
+    }
+
+    .elfsight-app-3c18f113-0531-4dc8-b02c-5714ef3702a4 {
+        width: 100%; /* Ancho del 100% en pantallas pequeñas */
     }
 }
 

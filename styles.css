@@ -24,7 +24,7 @@ body {
     align-items: center center;
 }
 /*---------------- FIRST SECTION -------------------*/
-.container1 {
+.container0 {
     margin: 0 auto;
     width: 100%;
     min-height: auto;
@@ -35,6 +35,17 @@ body {
     border: 1px solid #650ba5;
 }
 
+.container1 {
+    margin: 0 auto;
+    width: 100%;
+    min-height: auto;
+    display: flex; /* Establece el contenedor como flexible */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente en el contenedor */
+    background-color: #fffefe;
+    /*border: 1px solid #650ba5;*/
+}
+
 .container2 {
     margin: 0 auto;
     width: 80%;
@@ -42,7 +53,7 @@ body {
     display: flex; /* Establece el contenedor como flexible */
     justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor con espacio entre ellos */
     align-items: center; /* Centra los elementos verticalmente en el contenedor */
-    background-color: #fffefe;
+    background-color: #fffefe00;   
     /*border: 1px solid #c51010;*/
 }
 
@@ -153,6 +164,45 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-container20 {
+    position: relative;
+    width: 10%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/kukulcanpng.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-attachment: scroll;
+    background-size: 120%;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.image-container200 {
+    position: relative;
+    width: 10%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/kukulcanpng.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-attachment: scroll;
+    background-size: 120%;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.image-container201 {
+    position: relative;
+    width: 10%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/kukulcanpng.png'); /* Cambia 'background.jpg' con la ruta de tu imagen */
+    background-attachment: scroll;
+    background-size: 120%;
+    background-repeat: repeat-y;
     background-position: center;
 }
 
@@ -375,7 +425,7 @@ body {
     color: #f3f5f5;
     z-index: 1;
     padding-top: 10vh;
-    padding-bottom: 20px;
+    padding-bottom: 10vh;
 }
 
 .text-containerblacknormal{
@@ -475,9 +525,14 @@ text-align: center;
 
 @media only screen and (max-width: 768px) {
     .container2,
-    .container41 {
+    .container41,
+    .container62 {
         flex-direction: column; /* Cambia la dirección a vertical */
         align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    .container61 {
+        width: 100%
     }
 
     .image-container11,
@@ -503,6 +558,10 @@ text-align: center;
         left: 0;
     }
 
+    .blackbackground2 {
+        right: 0;
+    }
+
     .divider {
         margin-top: 40px;
         margin-bottom: 40px;
@@ -519,7 +578,8 @@ text-align: center;
         margin-top: 10px;
     }
 
-    .image-containerEMPTY {
+    .image-containerEMPTY,
+    .image-container20 {
         width: 0%; /* Cambia el ancho al 100% en pantallas más pequeñas */
         min-height: 0px;
     }
@@ -528,5 +588,3 @@ text-align: center;
         width: 100%; /* Ancho del 100% en pantallas pequeñas */
     }
 }
-
-
